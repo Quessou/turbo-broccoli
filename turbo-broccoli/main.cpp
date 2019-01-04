@@ -1,9 +1,10 @@
 #include <iostream>
 
-using namespace std;
+#include <CoucouBrocoliReturner.h>
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    CoucouBrocoliReturner returner;
+    std::cout << returner.returnCoucouBrocoli() << std::endl;
     return 0;
 }
