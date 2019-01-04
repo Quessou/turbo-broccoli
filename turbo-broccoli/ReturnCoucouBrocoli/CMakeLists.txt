@@ -1,1 +1,4 @@
-add_library(ReturnCoucouBrocoli CoucouBrocoliReturner.cpp CoucouBrocoliReturner.h)
+add_library(ReturnCoucouBrocoli SHARED
+    CoucouBrocoliReturner.cpp
+    CoucouBrocoliReturner.h
+    )
