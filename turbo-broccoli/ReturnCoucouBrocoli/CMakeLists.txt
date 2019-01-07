@@ -1,4 +1,2 @@
-add_library(ReturnCoucouBrocoli SHARED
-    CoucouBrocoliReturner.cpp
-    CoucouBrocoliReturner.h
-    )
+add_subdirectory(test)
+add_subdirectory(ReturnCoucouBrocoli)

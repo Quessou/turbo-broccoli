@@ -1,0 +1,4 @@
+add_executable(testReturnCoucouBrocoli testreturncoucoubrocoli.cpp)
+
+target_link_libraries(testReturnCoucouBrocoli ReturnCoucouBrocoli)
+target_link_libraries(testReturnCoucouBrocoli gtest_main gtest pthread)
