@@ -3,10 +3,12 @@
 # Exit immediately if a command exists with a non-zero status
 set -e
 
-for testdirectory in */test/; do
+mkdir -p testResults
+for testDirectory in */test/; do
 	#echo $testdirectory
-	testexecutables=$(find $testdirectory -type f -executable)
-	for executable in $testexecutables; do
-		$executable
+	testExecutables=$(find $testDirectory -type f -executable)
+	for executable in $testExecutables; do
+		executableName=$(basename $executable)
+		$executable --gtest_output="xml:testResults/testresults_$executableName.xml"
 	done
 done
