@@ -29,3 +29,10 @@ TEST(returnCoucouBrocoliTest, testCopyCtor) {
     CoucouBrocoliReturner returner2(returner);
     EXPECT_EQ(returner2.m_i, 0);
 }
+
+
+TEST(returnCoucouBrocoliTest, testReturnCoucouBrocolo) {
+    CoucouBrocoliReturner returner;
+    EXPECT_EQ(returner.returnCoucouBrocolo(), "Coucou turbo brocolo !");
+    EXPECT_NE(returner.returnCoucouBrocolo(),"Coucou turbo brocola !");
+}
