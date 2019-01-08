@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 2.8)
 
 project(turbo-broccoli)
 
+enable_testing()
+
 include_directories ("${PROJECT_SOURCE_DIR}/ReturnCoucouBrocoli")
 include_directories("${PROJECT_SOURCE_DIR}/main")
 add_subdirectory(main)
