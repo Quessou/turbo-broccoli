@@ -11,6 +11,7 @@ add_subdirectory(ReturnCoucouBrocoli)
 
 configure_file(runTests.sh "${CMAKE_BINARY_DIR}/runTests.sh")
 
+# Debug messages
 message("================================================")
 message("executable out path : " ${EXECUTABLE_OUTPUT_PATH})
 message("cmake binary dir : " ${CMAKE_BINARY_DIR})
