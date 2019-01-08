@@ -2,7 +2,12 @@
 
 class CoucouBrocoliReturner {
 public:
+    CoucouBrocoliReturner();
+    CoucouBrocoliReturner(int i);
+    CoucouBrocoliReturner(const CoucouBrocoliReturner& returner);
     std::string returnCoucouBrocoli() const;
     std::string returnCoucouBrocolo() const;
+
+    int m_i = -1;
 
 };
