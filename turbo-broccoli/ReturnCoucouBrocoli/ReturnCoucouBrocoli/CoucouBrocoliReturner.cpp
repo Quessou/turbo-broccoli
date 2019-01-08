@@ -11,7 +11,8 @@ CoucouBrocoliReturner::CoucouBrocoliReturner(const CoucouBrocoliReturner &return
 
 std::string CoucouBrocoliReturner::returnCoucouBrocoli() const
 {
-    return std::string("Coucou turbo brocoli !");
+    auto string = std::string("Coucou turbo brocoli !");
+    return string;
 }
 
 std::string CoucouBrocoliReturner::returnCoucouBrocolo() const
