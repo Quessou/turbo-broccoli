@@ -42,4 +42,6 @@ TEST(returnCoucouBrocoliTest, testReturnCoucouBrocoliBranches) {
     CoucouBrocoliReturner returner;
     EXPECT_EQ(returner.returnCoucouBrocoli(false), "Coucou turbo brocoli !");
     EXPECT_EQ(returner.returnCoucouBrocoli(true), "Coucou turbo brocolo !");
+    EXPECT_NE(returner.returnCoucouBrocoli(true), "Coucou turbo brocola !");
+    EXPECT_NE(returner.returnCoucouBrocoli(false), "Coucou turbo brocola !");
 }
